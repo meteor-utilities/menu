@@ -38,6 +38,14 @@
     align-items: center;
   }
 
+  // no items
+
+  &.menu-no-items{
+    .menu-items-toggle{
+      display: none;
+    }
+  }
+
   // expanded menu
 
   &.menu-component.js-expanded{
