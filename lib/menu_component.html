@@ -11,13 +11,15 @@
       </div>
     {{/if}}
 
-    {{#with rootMenuItems}}
-      <ul class="menu-items js-menu-items" role="menu" aria-labelledby="dLabel">
-        {{#each this}}
-          {{> menuItem}}
-        {{/each}}
-      </ul>
-    {{/with}}
+    {{#if showRootMenuItems}}
+      {{#with rootMenuItems}}
+        <ul class="menu-items js-menu-items" role="menu" aria-labelledby="dLabel">
+          {{#each this}}
+            {{> menuItem}}
+          {{/each}}
+        </ul>
+      {{/with}}
+    {{/if}}
 
   </div>
 
@@ -44,13 +46,15 @@
       {{/if}}
     </div>
 
-    {{#with childMenuItems}}
-      <ul class="menu-child-items js-menu-items">
-        {{#each this}}
-          {{> menuItem}}
-        {{/each}}
-      </ul>
-    {{/with}}
+    {{#if showChildMenu}}
+      {{#with childMenuItems}}
+        <ul class="menu-child-items js-menu-items">
+          {{#each this}}
+            {{> menuItem}}
+          {{/each}}
+        </ul>
+      {{/with}}
+    {{/if}}
 
   </li>
 </template>

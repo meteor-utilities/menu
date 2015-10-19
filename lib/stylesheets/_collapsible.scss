@@ -48,7 +48,7 @@
 
   // expanded menu
 
-  &.menu-component.js-expanded{
+  &.menu-component.menu-expanded{
     &>.menu-label-wrapper .menu-icon-expand{
       display: none;
     }
@@ -59,7 +59,7 @@
   
   // collapsed menu
 
-  &.menu-component.js-collapsed{
+  &.menu-component.menu-collapsed{
     &>.menu-label-wrapper .menu-icon-collapse{
       display: none;
     }
@@ -74,7 +74,7 @@
 
   // expanded menu item
 
-  .menu-item.js-expanded{
+  .menu-item.menu-expanded{
     &>.menu-item-label-wrapper .menu-icon-expand{
       display: none;
     }
@@ -85,7 +85,7 @@
 
   // collapsed menu item
 
-  .menu-item.js-collapsed{
+  .menu-item.menu-collapsed{
     &>.menu-item-label-wrapper .menu-icon-collapse{
       display: none;
     }

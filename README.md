@@ -26,6 +26,10 @@ Then just include the `menuComponent` template while passing the necessary argum
 
 All arguments are optional unless specified otherwise. 
 
+##### `menuType` (String)
+
+One of `list`, `dropdown`, or `collapsible`. Defaults to `list`.
+
 ##### `menuItems` (Array) [required]
 
 An array containing the menu's contents (see below).
@@ -50,9 +54,9 @@ An optional CSS class given to the menu
 
 A custom template used to display individual menu items (defaults to "defaultMenuItem")
 
-##### `startPosition` (String)
+##### `expandLevel` (Number)
 
-For collapsible menus only, defines whether the menu should start off as `expanded` or `collapsed`. Defaults to `collapsed`.
+For collapsible menus only, how far to open the menu. `0` means the menu contents are collapsed, `1` expands the first level, `2` expands up to the second level, etc., and `all` expands the entire menu. Defaults to `1`.
 
 ### Menu Items Properties
 
