@@ -63,7 +63,7 @@
 <template name="defaultMenuItem">
   <a class="menu-item-label" href="{{itemRoute}}">
     <span class="menu-item-label-text">{{{getItemLabel}}}</span>
-    {{#if description}}<span class="menu-item-description">{{getItemDescription}}</span>{{/if}}
+    {{#if getItemDescription}}<span class="menu-item-label-description">{{getItemDescription}}</span>{{/if}}
   </a>
 
   {{#if childMenuItems}}
